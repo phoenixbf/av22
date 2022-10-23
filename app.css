@@ -3,10 +3,21 @@
     padding: 0px;
 }
 
+.bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    z-index: -30;
+
+    opacity: 0.1;
+}
+
 
 .topContent {
     color: black;
-    padding: 10px;
 
     margin: 0px;
     padding: 0px;
@@ -18,10 +29,10 @@
 
     padding-top: 25px;
     padding-bottom: 25px;
-    
+
     margin: auto;
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(12px);
 }
 
 .introText {
