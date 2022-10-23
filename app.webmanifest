@@ -1,0 +1,13 @@
+{
+	"name": "ArcheVirtual22",
+	"background_color": "#BBB",
+	"display": "fullscreen",
+	"scope": "/",
+	"icons": [
+	    {
+	    "src": "appicon.png",
+	    "sizes": "512x512",
+	    "type": "image/png"
+	    }
+	]
+}
