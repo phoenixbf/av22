@@ -67,14 +67,19 @@ let createItem = (url, title, urlCover, descr)=>{
 
     // content
     //htmlcontent += "<br><div class='atonAuthor'><img class='atonSmallIcon' src='"+ATON.PATH_RES+"icons/user.png'>"+user+"</div>";
-    htmlcontent += "<div class='galleryItemDescr'>"+descr+"</div>"
+    if (descr) htmlcontent += "<div class='galleryItemDescr'>"+descr+"</div>";
+
     htmlcontent += "</div></div>";
 
     $("#idGallery").append(htmlcontent);
 }
 
 window.addEventListener("load", ()=>{
-    createItem("/s/samples/skyphos?vrc=1", "Tomba", "item-tomba.png", "Tomba");
+    let ainst = "https://aton.ispc.cnr.it/";
+
+    createItem(ainst+"s/avirt/20221024-4ozgshf2r?vrc=1", "Tomba", "item-tomba.png");
+    createItem(ainst+"s/vhlab/20221024-z3sa0q4xh?vrc=1", "Foro di Augusto", "item-faug.png");
+    createItem(ainst+"s/avirt/20221024-i4b5wvk8n?vrc=1", "La Prisgiona", "item-pris.png");
 });
 
 </script>
@@ -87,7 +92,7 @@ window.addEventListener("load", ()=>{
 
 
         <div class="appBand">
-            <div class="introQR"><img src="aton-av22.png"><br>Inquadra per l'esperienza</div>
+            <div class="introQR"><img src="qr-av22.png"><br>Inquadra per l'esperienza</div>
             <div class="introText">
             Il framework open-source <b>ATON (CNR ISPC)</b> fornisce gli strumenti e gli standard per costruire <b>metaversi</b> orientati ai BBCC, accessibili da qualunque dispositivo, utilizzando il proprio web browser e senza alcuna installazione.<br><br>
             Ad ArcheoVirtual 2022 vengono esposti alcuni <b>spazi virtuali collaborativi</b>, accessibili con il proprio dispositivo dalla galleria qui sopra assieme ad altri partecipanti (qui in mostra o da casa).<br><br>
