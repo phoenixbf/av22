@@ -62,7 +62,7 @@ let createItem = (url, title, urlCover, descr)=>{
     htmlcontent += "<div class='atonBlockSubTitle'>"+title+"</div><br>";
 
     htmlcontent += "<a class='atonCover' href='"+url+"'>";
-    htmlcontent += "<img src='"+urlCover+"' style='width:200px; height:auto'>";
+    htmlcontent += "<img src='"+urlCover+"' style='width:250px; height:auto'>";
     htmlcontent += "</a>";
 
     // content
@@ -78,7 +78,7 @@ window.addEventListener("load", ()=>{
     let ainst = "https://aton.ispc.cnr.it/";
 
     createItem(ainst+"s/avirt/20221024-4ozgshf2r?vrc=1", "Tomba", "item-tomba.png");
-    createItem(ainst+"s/vhlab/20221024-z3sa0q4xh?vrc=1", "Foro di Augusto", "item-faug.png");
+    createItem(ainst+"s/avirt/20221024-ugp0zznwr?vrc=1", "Vani Temple Complex", "item-vani.png");
     createItem(ainst+"s/avirt/20221024-i4b5wvk8n?vrc=1", "La Prisgiona", "item-pris.png");
 });
 
@@ -107,6 +107,7 @@ window.addEventListener("load", ()=>{
     <a href='http://osiris.itabc.cnr.it/aton/' target='_blank'>ATON</a> framework by <a href='https://www.ispc.cnr.it/' target='_blank'>CNR ISPC</a>
     </div>
 
+<!-- 
     <video autoplay muted loop class="bgVideo"><source src="bg.mp4" type="video/mp4"></video>
-
+-->
 </body>
