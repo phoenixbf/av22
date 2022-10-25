@@ -62,15 +62,19 @@ window.addEventListener('load',()=>{
 
         ATON.FE.uiAddButtonVRC("idTopToolbar");
 
-        ATON.FE.uiSwitchButton("scene", ATON.SceneHub._bEdit);
-
         ATON.FE.uiAddButton("idTopToolbar", "selector", ()=>{
             ATON.FE.popupSelector();
         }, "3D Selector options");
         ATON.FE.uiAddButtonStreamFocus("idTopToolbar");
+        HATHOR.uiAddButtonMeasure("idTopToolbar");
+
+        ATON.FE.uiAddButton("idTopToolbar", "nav", HATHOR.popupNav, "Navigation" );
 
         ATON.FE.uiAddButtonFullScreen("idTopToolbar");
+        ATON.FE.uiAddButtonVR("idTopToolbar");
+        
         ATON.FE.uiAddButton("idTopToolbar", "share", HATHOR.popupShare, "Share");
+        //ATON.FE.uiAddButtonQR("idTopToolbar");
 
 /*
         ATON.FE.uiAddButton("idTopToolbar", "list", ()=>{
@@ -95,12 +99,6 @@ window.addEventListener('load',()=>{
     <!-- Bottom Toolbar -->
     <div id="idBottomToolbar" class="atonToolbar atonToolbar-bottom scrollableX"></div>
     <div id="idBottomRToolbar" class="atonToolbar atonToolbar-bottom-right"></div>
-
-    <!-- Info
-    <div id="idInfoContainer" class="infoContainer"><div class="infoTitle">Title</div><br>
-    <div class="infoContent">Lorem ipsum dolor sit amet</div></div>
-     -->
-     
 
     <!-- Main Popup -->
     <div id="idPopup" class="atonPopupContainer" style="display:none;"></div>
